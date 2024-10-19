@@ -36,8 +36,8 @@ cmake ..
 - [Teapot model](https://casual-effects.com/g3d/data10/common/model/teapot/teapot.zip) by Martin Newell (CC0 License)
 - [Dabrovic Sponza model](https://casual-effects.com/g3d/data10/index.html#) by Marko Dabrovic (CC BY-NC License)
 
-
 # Creative Task Description for Rasterization
+
 ### Files Modified and Their Purpose
 
 - **rasterizer_renderer.cpp**: The `apply_sepia_tone_filter` method called for the sepia tone filter effect.
@@ -46,9 +46,22 @@ cmake ..
 The task implements rasterization, applying a sepia tone filter to the final render output, transforming pixel colors to create a classic visual effect.
 
 - Before:
-![image](https://github.com/user-attachments/assets/9f455c42-38c1-4c66-b52a-03344bc325bb)
-
+  ![image](https://github.com/user-attachments/assets/9f455c42-38c1-4c66-b52a-03344bc325bb)
 
 - After:
-![image](https://github.com/user-attachments/assets/0784ea17-e3e7-485d-bb88-463a2ddf440b)
+  ![image](https://github.com/user-attachments/assets/0784ea17-e3e7-485d-bb88-463a2ddf440b)
 
+# Creative Task Description for Raytracing
+
+### Files Modified and Their Purpose
+
+The task implements raytracing, adjusting `closest_hit_shader` for Monte-Carlo light tracing.
+
+- result.png:
+  ![result](https://github.com/user-attachments/assets/a171893c-976c-4d51-b36d-e4a5d6d1794e)
+
+- raytracing_depth(3), accumulation_num(16):
+  ![creative_task_3-16](https://github.com/user-attachments/assets/01efd38c-3e48-47df-b64c-7f4016c226d6)
+
+- raytracing_depth(3), accumulation_num(128):
+  ![creative_task_3-128](https://github.com/user-attachments/assets/c944c089-8751-4ade-b0df-64e328d314c8)
