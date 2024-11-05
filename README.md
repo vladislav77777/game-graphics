@@ -64,4 +64,37 @@ The task implements raytracing, adjusting `closest_hit_shader` for Monte-Carlo l
   ![creative_task_3-16](https://github.com/user-attachments/assets/01efd38c-3e48-47df-b64c-7f4016c226d6)
 
 - raytracing_depth(3), accumulation_num(128):
-  ![creative_task_3-128](https://github.com/user-attachments/assets/c944c089-8751-4ade-b0df-64e328d314c8)
+  ![creative_task_3-128](https://github.com/user-attachments/assets/c944c089-8751-4ade-b0df-64e328d314c8)  
+
+
+# Task Description for DX12
+
+### Files Modified, Their Purpose And Some Results
+
+cube.obj:
+![image](https://github.com/user-attachments/assets/cb6b1bd9-39fe-47fc-8ed2-6072c68524f5)
+
+z-test.obj:
+![image](https://github.com/user-attachments/assets/be5b2bfc-7d3e-4b01-b206-d138465ed41b)
+
+launch.json:
+```
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(Windows) Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Debug/DirectX12.exe",
+            "args": ["--model_path", "models/CornellBox-Sphere.obj"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "externalTerminal"
+        }
+
+
+    ]
+}
+```
